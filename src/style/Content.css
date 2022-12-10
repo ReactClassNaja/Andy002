@@ -1,0 +1,39 @@
+.contentRoot{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    width: 20%;
+    margin: 0px auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.paragraph{
+    width: 30%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -30px;
+    color: white;
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img{
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.avatar p{
+    font-size: 14px;
+    font-weight: bold;
+}

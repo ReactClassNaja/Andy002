@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.box{
+    background-color: burlywood;
+    width: 220px;
+    height: 280px;
+    border-radius: 20px;
+    margin: 20px 15px;
+}
+
+.image{
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardFooter{
+    display: flex;
+    width: 70%;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding-top: 30%;
+}
+
+.box h3{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.box p{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 5%;
+}
