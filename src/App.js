@@ -1,56 +1,60 @@
-import React from 'react';
-import photo from './Img/keqing.png';
+import React, {useState} from 'react'
+import photo from './Img/food.jpg';
+import logo from './Img/logo.png';
+import profile from './Img/myself1.jpeg'
 import './style.css';
 
 export default function App() {
+
+  const food = [
+    {id: 1, menu: "Spaghetti", price: "25.000 Kip", img: './Spaghetti.png'},
+    {id: 2, menu: "Kapao", price: "30.000 Kip", img: './kapao.png'},
+    {id: 3, menu: "Noodles", price: "25.000 Kip", img: './noodle.png'},
+    {id: 4, menu: "Fried rice", price: "25.000 Kip", img: './friedrice.png'},
+  ]
   return (
-    <div className='nav0'>
-      <div className='nav00'>
-      <div className='nav1'>
-        <div className='nav2'>
-          WISTIA
-        </div>
-        <div className='nav3'>
-          Product
-        </div>
-        <div className='nav3'>
-          Learning center
-        </div>
-        <div className='nav3'>
-          Podcast&Series
-        </div>
-        <div className='nav3'>
-          About
-        </div>
-        <div className='nav4'></div>
-        <div className='nav3'>
-          <button className='button1'>Login</button>
-        </div>
-        <div className='nav3'>
-          <button className='button2'>Get started</button>
-        </div>
-      </div>
+    <div style={{ width: '100%', backgroundImage: `url(${photo})`, height:'100vh'}}>
+
       <div className='nav0'>
-        <div className='nav5'>
-          <div style={{fontWeight: 'bold'}}>
-            Let your video do the work
-          </div>
-          <div style={{fontSize: '29px'}}>
-            Video marketing software that makes it easy to find, engage, and grow your audience.
-          </div>
-          <div className='nav6'>
-            <div>
-              <button className='button3'>Try for free</button>
-            </div>
-            <div>
-              <button className='button4'>Watch video</button>
-            </div>
-          </div>
+      <div>
+        <img src={logo} width='30px' style={{padding:'0px 15px'}} />
+      </div>
+      <div>
+        COOKING
+      </div>
+      </div>
+
+      <div className='nav1'>
+        <h1>Simple and Tasty Recipes</h1>
+      </div>
+      <div className='nav2'>
+        Food is a basic necessity for survival and also the key to a healthy life.
+        <br/>
+        Without regular healthy meals children struggle to go to school, carers struggle to work and communities are left battling to survive.
+        <br/>
+        Here at RGW, we have identified over 100 refugee families and their children to be part of a food protection program.
+        <br/>
+        he families are currently living in tent cities in Adana Turkey.
+      </div>
+
+      <div className='nav4'>
+        <div>
+        <img className='nav3' src={profile} alt=''/>
         </div>
-        <div className='nav5'>
-          <img src={photo} alt="" width={"600px"}/>
+        <div className='nav5'></div>
+        <div>
+          By Phonesavanh Keonouchanh
         </div>
       </div>
+
+      <div style={{display: "flex"}}>
+        {food.map(row =>
+          <div key={row.id} className='nav6'>
+            <img src={row.img} width={"80%"}/>
+            <p>{row.menu}</p>
+            <p>{row.price}</p>
+          </div>
+          )}
       </div>
     </div>
   )

@@ -1,85 +1,51 @@
-.nav1{
-    background-color: aquamarine;
-    color: white;
-    display: flex;
-    justify-content: center;
-    height: 78px;
-    align-items: center;
-}
-
 .nav0{
+    color: blue;
+    padding-left: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    padding-top: 50px;
 }
 
-.nav00{
-    max-width: 1600px;
-    width: 100vw;
+.nav1{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
 }
 
 .nav2{
-    font-size: 30px;
-    width: 200px;
     display: flex;
     justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 .nav3{
-    width: 150px;
-    display: flex;
-    justify-content: center;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
 }
 
 .nav4{
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .nav5{
-    background-color: aquamarine;
-    width: 750px;
-    font-size: 70px;
-    padding: 100px;
-    color: white;
-    min-height: 63vh;
+    padding: 5px;
 }
 
 .nav6{
+    background-color: burlywood;
     display: flex;
-    justify-content: space-around;
-}
-
-.button1{
-    border: none;
-    border-radius: 5px;
-    width: 100px;
-    padding: 10px;
-    cursor: pointer;
-}
-.button2{
-    border: none;
-    border-radius: 5px;
-    width: 100px;
-    padding: 10px;
-    color: white;
-    background-color: aqua;
-    cursor: pointer;
-}
-.button3{
-    border: none;
-    border-radius: 5px;
-    width: 250px;
-    padding: 30px;
-    font-size: 30px;
-    background-color: aqua;
-    color: white;
-    cursor: pointer;
-}
-.button4{
-    border: none;
-    border-radius: 5px;
-    width: 250px;
-    padding: 30px;
-    font-size: 30px;
-    color: palevioletred;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    margin: 90px;
+    font-weight: bold;
 }
